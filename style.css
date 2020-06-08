@@ -1,0 +1,53 @@
+body {
+  background: white;
+  color: #323232;
+}
+
+div.box {
+  width: 600px;
+  height: 30px;
+  color: red;
+  padding: 10px;
+  border: 1px solid blue; 
+  margin: 10px;
+}
+div.cart {
+  width: 600px;
+  height: 350px;
+  color: red;
+  padding: 10px;
+  border: 1px solid blue; 
+  margin: 10px;
+}
+.column {
+  flex: 50%;
+}
+
+.row {
+  display: flex;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 240px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+
+  position: absolute;
+  bottom: 25%;
+  left: 150%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
